@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cafeLuz"
+    tools:context=".Enfermedad">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENFERMEDADES"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        >
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/cafepastel"
+            android:layout_marginHorizontal="10dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/img_e"
+                android:layout_gravity="center"
+                android:layout_marginVertical="15dp">
+            </ImageView>
+
+            <Button
+                android:id="@+id/regE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="95dp"
+                android:layout_marginVertical="15dp"
+                android:backgroundTint="@color/cafeLuz">
+            </Button>
+
+            <Button
+                android:id="@+id/actE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actualizar"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginVertical="15dp"
+                android:layout_marginHorizontal="95dp"
+                android:backgroundTint="@color/cafeLuz">
+            </Button>
+
+            <Button
+                android:id="@+id/consuE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consultar"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginVertical="15dp"
+                android:layout_marginHorizontal="95dp"
+                android:backgroundTint="@color/cafeLuz">
+            </Button>
+
+            <Button
+                android:id="@+id/cerE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cerrar"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginVertical="15dp"
+                android:layout_marginHorizontal="100dp"
+                android:backgroundTint="@color/cafeLuz">
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

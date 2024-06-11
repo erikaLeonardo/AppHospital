@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Inicio">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="''La Paz''"
+        android:textColorHint="@color/black"
+        android:background="@color/verd"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="40sp">
+    </TextView>
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/logo_h"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+    </ImageView>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/verde2Luz"
+            android:layout_marginHorizontal="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¡Bienvenido!"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textStyle="italic">
+            </TextView>
+
+            <Button
+                android:id="@+id/pacientesI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pacientes"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginHorizontal="80dp"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="@color/verd">
+            </Button>
+
+            <Button
+                android:id="@+id/enfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enfermedades"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="@color/verd">
+            </Button>
+
+            <Button
+                android:id="@+id/registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registros"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginHorizontal="80dp"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="@color/verd">
+            </Button>
+
+            <Button
+                android:id="@+id/cerrarI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_cerrar"
+                android:text="Cerrar"
+                android:layout_marginLeft="160dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginVertical="35dp"
+                android:backgroundTint="@color/verd">
+            </Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/img_paci"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pac_N"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nombre Paciente"
+                android:textSize="15sp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/ap1_N"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Primer Apellido Paciente"
+                android:textSize="15sp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/ap2_N"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Segundo Apellido Paciente"
+                android:textSize="15sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tel_P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Telefono">
+            </TextView>
+
+            <TextView
+                android:id="@+id/email_P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Email">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/id_Img">
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/buscarA1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_buscar"
+        android:contentDescription="buscar"
+        android:backgroundTint="@color/amarillo"
+        android:layout_marginLeft="20dp">
+    </ImageButton>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/img_buscar"
+        android:contentDescription="buscar1"
+        android:backgroundTint="@color/verdecito"
+        android:layout_marginHorizontal="80dp">
+    </ImageButton>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_eliminar"
+        android:contentDescription="eliminar"
+        android:backgroundTint="@color/verdecito">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/cerrarA1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cerrar3"
+        android:contentDescription="cerrar"
+        android:backgroundTint="@color/amarillo">
+    </ImageButton>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cancelar1"
+        android:contentDescription="cancelar"
+        android:backgroundTint="@color/verdecito">
+    </ImageButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hola"
+            android:textSize="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp">
+        </TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hola"
+            android:layout_marginLeft="5dp">
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

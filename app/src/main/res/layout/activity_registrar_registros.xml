@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrarRegistros">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrsr Citas Medicas"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="@color/verdecito">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tyle="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:hintTextColor="@color/white"
+        app:startIconDrawable="@drawable/ic_nombre"
+        android:layout_marginTop="60dp"
+        android:layout_marginHorizontal="40dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Id_Paciente"
+            android:inputType="number"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buscarReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="100dp"
+        android:backgroundTint="@color/verdecito">
+    </Button>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tyle="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:hintTextColor="@color/white"
+        app:startIconDrawable="@drawable/ic_nombre"
+        android:layout_marginHorizontal="40dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nOM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre Del Paciente"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tyle="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:hintTextColor="@color/white"
+        app:startIconDrawable="@drawable/ic_nombre"
+        android:layout_marginHorizontal="40dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ape2llo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Primer Apellido"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/opcionE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="40dp">
+    </Spinner>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tyle="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:hintTextColor="@color/white"
+        app:startIconDrawable="@drawable/ic_fecha"
+        android:layout_marginHorizontal="40dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fechaR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha"
+            android:inputType="date"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/guardarRR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:drawableRight="@drawable/ic_guardar1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginVertical="5dp"
+        android:backgroundTint="@color/verdecito">
+    </Button>
+
+    <Button
+        android:id="@+id/nuevoRR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nuevo"
+        android:drawableRight="@drawable/ic_nuevo1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginVertical="5dp"
+        android:backgroundTint="@color/verdecito">
+    </Button>
+
+    <Button
+        android:id="@+id/cerrarRR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginVertical="5dp"
+        android:backgroundTint="@color/verdecito">
+    </Button>
+
+</LinearLayout>

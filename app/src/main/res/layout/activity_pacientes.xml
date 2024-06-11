@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mor"
+    tools:context=".Pacientes">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PACIENTES"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        android:textAlignment="center"
+        android:background="@color/mor">
+    </TextView>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/mpastel"
+            android:layout_marginHorizontal="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_paci"
+                android:layout_gravity="center"
+                android:layout_marginVertical="30dp">
+            </ImageView>
+
+            <Button
+                android:id="@+id/altaP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alta"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="80dp"
+                android:backgroundTint="@color/mor">
+            </Button>
+
+            <Button
+                android:id="@+id/actualizarR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actualizar"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="80dp"
+                android:layout_marginVertical="20dp"
+                android:backgroundTint="@color/mor">
+            </Button>
+
+            <Button
+                android:id="@+id/consultarP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consultar"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="80dp"
+                android:backgroundTint="@color/mor">
+            </Button>
+
+            <Button
+                android:id="@+id/cerrarR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_cerrar"
+                android:textStyle="bold"
+                android:text="Cerrar"
+                android:layout_marginLeft="200dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/mor">
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

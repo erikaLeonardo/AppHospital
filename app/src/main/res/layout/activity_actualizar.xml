@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/amarillo"
+    tools:context=".Actualizar">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACTUALIZAR"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/amapastel"
+            android:layout_marginHorizontal="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/img_pac"
+                android:layout_gravity="center"
+                android:layout_marginVertical="2dp">
+            </ImageView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tyle="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:hintTextColor="@color/white"
+                    app:startIconDrawable="@drawable/ic_idpaci"
+                    android:layout_marginHorizontal="40dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/idP2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="id Paciente"
+                        android:inputType="number"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/buscarA1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buscar"
+                    android:backgroundTint="@color/amarillo"
+                    android:layout_marginHorizontal="100dp">
+                </Button>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/amarillo">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tyle="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/white"
+                app:startIconDrawable="@drawable/ic_nombre"
+                android:layout_marginHorizontal="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nombreP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre Paciente"
+                    android:inputType="textPersonName"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tyle="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/white"
+                app:startIconDrawable="@drawable/ic_ape"
+                android:layout_marginHorizontal="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ape1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Primer Apellido"
+                    android:inputType="textPersonName"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tyle="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/white"
+                app:startIconDrawable="@drawable/ic_ape"
+                android:layout_marginHorizontal="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ape2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Segundo Apellido"
+                    android:inputType="textPersonName"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tyle="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/white"
+                app:startIconDrawable="@drawable/ic_telefono"
+                android:layout_marginHorizontal="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/telefonoAc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Telefono"
+                    android:inputType="number"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tyle="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/white"
+                app:startIconDrawable="@drawable/ic_correo"
+                android:layout_marginHorizontal="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/correoAc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Correo Electronico"
+                    android:inputType="textPersonName"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/amapastel"
+                    android:layout_marginHorizontal="20dp">
+
+                    <Button
+                        android:id="@+id/guardarA1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Actualizar"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginVertical="2dp"
+                        android:backgroundTint="@color/amarillo">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/eliminarA1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Eliminar"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginVertical="2dp"
+                        android:backgroundTint="@color/amarillo">
+                    </Button>
+
+                </LinearLayout>
+            </ScrollView>
+
+                <Button
+                    android:id="@+id/cerrarA1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cerrar"
+                    android:layout_marginLeft="200dp"
+                    android:backgroundTint="@color/amarillo">
+                </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
